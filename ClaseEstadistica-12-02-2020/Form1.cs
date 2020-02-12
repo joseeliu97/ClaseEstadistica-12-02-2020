@@ -16,5 +16,10 @@ namespace ClaseEstadistica_12_02_2020
         {
             InitializeComponent();
         }
+
+        private void btnMediaAritmetica_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

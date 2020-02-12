@@ -70,6 +70,7 @@
             this.btnMediaAritmetica.TabIndex = 3;
             this.btnMediaAritmetica.Text = "Calcular X";
             this.btnMediaAritmetica.UseVisualStyleBackColor = false;
+            this.btnMediaAritmetica.Click += new System.EventHandler(this.btnMediaAritmetica_Click);
             // 
             // Form1
             // 
