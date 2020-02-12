@@ -23,5 +23,15 @@ namespace ClaseEstadistica_12_02_2020
             //Split= divide una cadena en base a un delimitador(patron) y devuelve una matriz
             lblRespuestaSerie.Text ="X=" + objEstadistica.media(txtSerie.Text.Split(','));
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblRespuestaSerie.Text = "X=" + objEstadistica.estandar(txtSerie.Text.Split(','));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            lblRespuestaSerie.Text = "X=" + objEstadistica.tipica(txtSerie.Text.Split(','));
+        }
     }
 }

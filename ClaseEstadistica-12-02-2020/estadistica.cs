@@ -8,12 +8,13 @@ namespace ClaseEstadistica_12_02_2020
 {
     class estadistica
     {
-        public double suma = 0; 
+         
 
 
         public double media(string[] serie )
         {
-            foreach(string valor in serie)
+            double suma = 0;
+            foreach (string valor in serie)
             {
                 suma += int.Parse(valor);
             }
@@ -23,8 +24,8 @@ namespace ClaseEstadistica_12_02_2020
         public double estandar(string[]serie )
         {
             double media_Aritmetica = media(serie),
-                suma =0,
-                estandar=0;
+                suma = 0;
+            
 
             foreach(string valor in serie)
             {
