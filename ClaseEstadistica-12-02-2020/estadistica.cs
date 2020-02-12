@@ -19,5 +19,23 @@ namespace ClaseEstadistica_12_02_2020
             }
             return suma / serie.Length;
         }
+        
+        public double estandar(string[]serie )
+        {
+            double media_Aritmetica = media(serie),
+                suma =0,
+                estandar=0;
+
+            foreach(string valor in serie)
+            {
+                suma += Math.Pow(double.Parse(valor) - media_Aritmetica, 2);
+            }
+            return suma / serie.Length;
+        }
+        public double tipica(string[]serie)
+        {
+            return Math.Sqrt(estandar(serie));
+        }
+
     }
 }

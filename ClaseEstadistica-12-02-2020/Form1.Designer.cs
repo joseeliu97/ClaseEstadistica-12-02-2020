@@ -47,7 +47,7 @@
             // 
             this.txtSerie.Location = new System.Drawing.Point(63, 30);
             this.txtSerie.Name = "txtSerie";
-            this.txtSerie.Size = new System.Drawing.Size(245, 20);
+            this.txtSerie.Size = new System.Drawing.Size(257, 20);
             this.txtSerie.TabIndex = 1;
             // 
             // lblRespuestaSerie
@@ -64,7 +64,7 @@
             this.btnMediaAritmetica.BackColor = System.Drawing.Color.Transparent;
             this.btnMediaAritmetica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMediaAritmetica.ForeColor = System.Drawing.Color.Teal;
-            this.btnMediaAritmetica.Location = new System.Drawing.Point(143, 56);
+            this.btnMediaAritmetica.Location = new System.Drawing.Point(149, 56);
             this.btnMediaAritmetica.Name = "btnMediaAritmetica";
             this.btnMediaAritmetica.Size = new System.Drawing.Size(75, 23);
             this.btnMediaAritmetica.TabIndex = 3;
