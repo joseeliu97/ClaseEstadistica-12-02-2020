@@ -24,15 +24,16 @@ namespace ClaseEstadistica_12_02_2020
 
         private void button1_Click(object sender, EventArgs e)
         {
+
              
             try
             {
-                double[] longitud = { 1000, 1, 0.01, 0.001, 0.000001, 0.000000001, 1609.34, 0.9144, 0.3048, 0.0254, 0.835905 };
-                double Cantidad = double.Parse(txtValor.Text);
+                double[] Divisas = { 1, 0.114285, 0.00898714, 0.014336917, 667.08, 19.36, 39.69, 0.00026 };
+                double Cantidad = double.Parse(txtValorDivisas.Text);
                 double resultadoFinal;
-                int ValorDE = cboLongitudDE.SelectedIndex, ValorA = cboLongitudA.SelectedIndex;
-                resultadoFinal = (((longitud[ValorDE]) / (longitud[ValorA])) * (Cantidad));
-                lblLongitud.Text = resultadoFinal.ToString();
+                int ValorDE = cboDivisasDE.SelectedIndex, ValorA = cboDivisasA.SelectedIndex;
+                resultadoFinal = (((Divisas[ValorDE]) / (Divisas[ValorA])) * (Cantidad));
+                lblDivisas.Text = resultadoFinal.ToString();
             }
             catch (Exception error)
             {
@@ -40,8 +41,32 @@ namespace ClaseEstadistica_12_02_2020
             }
         }
 
-      
+        private void button2_Click(object sender, EventArgs e)
+        {
+           
+
+            try
+            {
+                double[] Almacenamiento = { 1, 8388608, 1048576, 1024, 0.0009765625, 0.00000095367431660625 };
+                double Cantidad = double.Parse(txtValorAlmacenamiento.Text);
+                double resultadoFinal;
+                int ValorDE = CboAlmacenamientoDE.SelectedIndex, ValorA = CboAlmacenamientoA.SelectedIndex;
+                resultadoFinal = (((Almacenamiento[ValorDE]) * (Almacenamiento[ValorA])) / (Cantidad));
+                lblAlmacenamiento.Text = resultadoFinal.ToString();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error en la introduccion de Datos", "Conversores", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
+
+        private void lblAlmacenamiento_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 
     }
 
